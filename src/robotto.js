@@ -43,6 +43,7 @@ robotto.parse = function(robotsFile) {
     let lastUserAgent;
 
     lines.forEach((line) => {
+        line = line.trim();
         let hashIndex = line.indexOf('#');
 
         if (hashIndex > -1) {
